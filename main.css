@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    background:#94d34c;
+}    
+
+
+#rim-outer{
+
+    margin: 100px auto 30px auto;
+    border: 8px solid black;
+    width: 600px;
+    height: 330px;
+    border-radius: 30px;
+    background: #fe2c54;
+}
+
+#rim-inner{
+    width: 86%;
+    height: 50%;
+    margin: 35px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: 8px solid black;
+    border-radius: 30px;
+    background: #515151;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+
+#bar{
+    width: 86%;
+    height: 25%;
+    margin: 35px;
+    margin-top: 15px;
+    border: 8px solid black;
+    border-radius: 30px;
+    background: white;
+}
+
+
+.bBlock{
+    position: relative;
+    overflow: hidden;
+    height: 98%;
+    border-right: 3px solid white;
+    font-size : 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: 	#8A2BE2;
+}
+
+.cBlock{
+    overflow: hidden;
+    position: relative;
+    font-weight: bold;
+    height: 98%;
+    font-size : 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: 	#8A2BE2;
+}
+
+#bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#play, #pause,#Lap{
+    border-right: 3px solid black;
+}
+
+.but{
+    height: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color:  #fe2c54;
+}
+
+.but:hover{
+    transition: 0.5s;
+    color: #0F3460;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background: #515151;
+    border-top: 5px solid black;
+}
+
+.animator{
+    animation: move-up 0.5s infinite;
+}
+
+
+@keyframes move-up {
+    from {
+        top: 100%;
+    }
+
+    to{
+        top: 0%;
+    }
+}
+
+#Carousel{
+    width: 700px;
+    height: 200px;
+    border: 8px solid black;
+    margin: auto;
+    display: flex;
+}
+
+#previous{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 5%;
+}
+
+#nextOne button{
+
+    height: 100%;
+    width: 100%;
+    background: transparent;
+
+}
+
+#previous button{
+
+    height: 100%;
+    width: 100%;
+    background: transparent;
+
+}
+
+.slides{
+    width: 95%;
+    border: 1px solid black;
+}
+
+#nextOne{
+    display: flex;
+    height: 100%;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+}
+
+.slide{
+    flex-shrink: 0;
+    display: inline-block;
+    width: 210px;
+    height: 70%;
+    margin: auto 15px;
+    padding-top: 25px;
+    
+
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.slides::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .LapTitle{
+    color: white;
+    font-size: 42px;
+    font-family: Arial;
+    text-align: center;
+  }
+
+  .TimeBar{
+    color: white;
+    font-size: 22px;
+    font-family: Arial;
+    text-align: center;
+
+
+  }
+
+  #Carousel{
+    display: none;
+  }

@@ -1,0 +1,52 @@
+<html>
+<head>
+
+    <!-- Given title to the page and linked stylesheet-->
+    <title>Stopwatch- By Harshit Gupta</title>
+    <link type="text/css" rel="stylesheet" href="./main.css"/>
+</head>    
+<body>
+    <!--It is the outer div (rim outer)-->
+    <div id="rim-outer">
+        <!--It is the inner div (rim inner)-->
+        <div id="rim-inner">
+            <!--It is the div containing the hour number.-->
+            <div class="bBlock" id="hour">
+                <!--There are are two div in the hour div one is current other one is just below it(next) just hidden by giving position 
+                    absolute top 100% overflow hidden now there is animation from top 100% to top 0% which gives flip animation 
+                    tho the clock
+                 -->
+                <div class="curr">0</div>
+                <div class="next">1</div>
+            </div>
+            <div class="bBlock" id="min">
+                <div class="curr">0</div>
+                <div class="next">1</div>
+            </div>
+            <div class="bBlock" id="sec">
+                <div class="curr">0</div>
+                <div class="next">1</div>
+            </div>
+            <div class="cBlock" id="msec">
+                <div class="curr">0</div>
+            </div>
+        </div>
+        <div id="bar">
+            <!--Just buttons that triggers function as stated-->
+            <div class="but" id="play" onclick="startCounter()">Play</div>
+            <div class="but" id="pause" onclick="pauseCounter()">Pause</div>
+            <div class="but" id="Lap" onclick="registerLap()">Lap</div>
+            <div class="but" id="Reset" onclick="resetCounter()">Reset</div>
+        </div>
+    </div>
+    <div id="Carousel">
+        <!--Just buttons that triggers function as stated-->
+        <div id="previous" onclick="leftScroll()"><button>&lt;</button></div>
+        <div class="slides">    
+        </div>
+        <div id="nextOne" onclick="rightScroll()"><button>&gt;</button></div>
+    </div>
+    <!--Added javascript file to the page-->
+    <script src="./myscript.js"></script>
+</body>
+</html>
